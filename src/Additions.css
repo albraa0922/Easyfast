@@ -1,0 +1,74 @@
+.additions{
+}
+.additions .even{
+    overflow: hidden;
+    background-color: #F2F7F9;
+}.additions .odd{
+    background-color: #fff;
+    overflow: hidden;
+}
+.addtit{
+    background-color: #fff;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.addtit p{
+    float: right;
+    color: #00261C;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 4px 30px;
+}
+.addlable{
+    overflow: hidden;
+    width: 1025px;
+    margin: auto;
+}
+.addlable  p:first-child{
+    width: 140px;
+    margin: 30px 30px 30px 20px;
+}
+.addlable p{
+    width: 85px;
+    text-align: center;
+    font-size: 15px;
+    margin: 30px 39px;
+    color: #828282;
+    float: right;
+}
+.additions{
+    overflow: hidden;
+    border-radius: 8px;
+    width: 1030px;
+    margin: auto;
+}
+.additions p{
+    text-align: center;
+    width: 85px;
+    margin: 25px 36px;
+    color: #02151B;
+    float: right;
+    font-weight: normal;
+    font-size: 16px;
+}
+.additions  p:first-child{
+    display: flex;
+    justify-content: right;
+    margin: 25px 40px 0 23px;
+    width: 140px;
+}.additions  p:last-child{
+    width: 105px;
+    margin: 19px 37px  0;
+}
+.additions p img{
+    margin: -10px 0 0 15px;
+}
+.additions button{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    margin: -6px 12px 0 0px;
+    cursor: pointer;
+}

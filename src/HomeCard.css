@@ -1,0 +1,70 @@
+.card{
+    width: 248px;
+    height: 150px;
+    background-color: #FCFDFD;
+    float: right;
+    margin: 20px 10px ;
+    border-radius: 13px;
+}
+.card .up {
+    height: 70px;
+}
+.card .up p{
+    font-size: 20px;
+    color: #828383;
+    float: right;
+    margin: 30px 25px;
+}
+.card .up span{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin: 23px;
+}
+.card .down .num{
+    font-size: 38px;
+    font-weight: bold;
+    float: right;
+    margin: -9px 16px ;
+}
+.card .odd{
+    background-color: #073B4C;
+    color: #073B4C;
+}
+.card .oddww{
+    width: 46px;
+    height: 25px;
+    background-color: #073B4C0A;
+    color: #073B4C;
+    margin: 35px 0px 0px 115px;
+    font-size: 12px;
+    padding: 2px 0px;
+    border-radius: 3px;
+}
+.card .oddcolor{
+    background-color: #073B4C;
+}
+.card .even{
+    background-color: #118AB2;
+    color: #118AB2;
+}
+.card .evenww{
+    width: 46px;
+    height: 25px;
+    background-color: #118AB214;
+    color: #118AB2;
+    margin: 35px 1px 0px 115px;
+    font-size: 12px;
+    padding: 2px 0px;
+    border-radius: 3px;
+}
+.card .evencolor{
+    background-color: #118AB2;
+}
+.card .down .p{
+    display: flex;
+    padding: 5px 5px;
+    margin: 0px 0px;
+    width: 43px;
+}

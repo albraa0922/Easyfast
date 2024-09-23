@@ -1,0 +1,42 @@
+.HomeContent{
+    width: 80%;
+    margin-left: 3%;
+}
+ .show{
+    height: 375PX;
+    overflow: hidden;
+    background-color: #fff;
+}
+.HomeContent .showBut{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding-top: 20px;
+    
+}
+.HomeContent .showBut button{  color: #118AB2;
+    display: flex;
+    margin: auto; 
+    background-color: #fff;
+    border: none;
+}
+.HomeContent .showBut button svg{
+    margin: 5px;
+}
+.pageBut button{
+    background-color: #fff;
+    border: none;
+    float: right;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.527);
+    margin: 10px 25px 0 0px;
+}
+.pageBut .active{
+    color: rgb(0, 0, 0);
+}
+
+
+
+.clear{
+    clear: both;
+}

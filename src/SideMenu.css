@@ -1,0 +1,42 @@
+.sidemenu{
+    width: 16%;
+    height: 1024px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+}
+.sidemenu .menu-logo{
+    margin-top: 34px ;
+}
+.menu-link ul {
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+}
+.menu-link ul li {
+    width: 197px;
+    height: 35px;
+    margin: 0 1px 15px;
+    text-align: right;
+}
+.menu-link ul li svg{
+    margin: 0 0 -3px ;
+}
+.menu-link ul li .left{
+    float: left;
+    margin-top: 4px;
+}
+.menu-link ul li  a{
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.menu-link ul li.active  a{
+    color: #0E6E8E;
+}
+.menu-link ul li  a:hover{
+    color: #0E6E8E;
+    font-size: 17px;
+}

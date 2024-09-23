@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    height: 102px;
+    width: 84%;
+    margin: 0;
+    background-color: #fff;
+
+}
+.nav-admin{
+    margin: 20px 0 0 52px  ;
+}
+.not{
+    margin: 40px 0 0 24px;  
+}

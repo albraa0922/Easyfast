@@ -1,0 +1,49 @@
+.addNew{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    background-color: #62798154;
+}
+.addNew .theAadd{
+    width: 900px;
+    height: 580px;
+    background-color: #fff;
+    margin: 27px auto;
+    border-radius: 15px;
+}
+.theAadd h2{
+    color: #130F26;
+    margin: 0px 25px 20px 730px ;
+    padding-top: 70px;
+}
+.theAadd .addcont{
+    height:300px ;
+    width: 100%;
+    margin: 30px auto;
+}
+.addcont div{
+    height: 80px;
+    width: 395px;
+    margin:28px 27px 0 27px ;
+    text-align: right;
+    color: #1F1F1F;
+}
+.addcont input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    text-align: right;
+    box-shadow: none;
+    border: 1px solid #2e2a2a5d;
+    border-radius: 5px;
+}
+.addcont .right{float: right;}
+.addcont .left {float: left;}
+.addcont Button{
+    margin: 25px 0px 20px 778px ;
+    background-color: #118AB2;
+}
