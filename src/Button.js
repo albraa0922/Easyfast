@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Button.css"
 
-function Buttuon({children}) {
+function Buttuon(props) {
   return (
-    <button className='but'>
-      {children}
+    <button onClick={props.handleClick} className='but'>
+      {props.children}
     </button>
   )
 }

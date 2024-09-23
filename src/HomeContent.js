@@ -12,11 +12,10 @@ function HomeContent() {
   const [show, setShow] = useState(true)
   const change =() =>  setShow(!show)
 
-  const [close, setClose] = useState(false)
-  const closeForm = () =>{
-        setClose(!close)
+  const [isopen, setIsopen] = useState(true)
+  const openForm = () =>{
+        setIsopen(!isopen)
   }
-  
   return (
     <div className='HomeContent'>
         <div>
@@ -33,7 +32,7 @@ function HomeContent() {
         <div className='clear'></div>
         <div className={show?"show" : ""}>
           <div className='addtit'>
-            <Buttuon onClick={closeForm} >إضافة سجل جديد   +</Buttuon>
+            <Buttuon handleClick={openForm}>إضافة سجل جديد   +</Buttuon>
             <p>اخر الاضافات</p>
             <div className='addlable'>
               <p>اسم المستخدم</p>
@@ -53,7 +52,7 @@ function HomeContent() {
                                                         عرض الكل 
           </button>
         </div>
-        <AddNew style={{display:(close? "none" :"")}}></AddNew>
+        <AddNew isopen={isopen} openForm={openForm}></AddNew>
     </div>
     
       

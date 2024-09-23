@@ -6,6 +6,7 @@
     height: 375PX;
     overflow: hidden;
     background-color: #fff;
+    border-radius: 15px;
 }
 .HomeContent .showBut{
     width: 100%;
