@@ -42,7 +42,7 @@ function HomeContent() {
               <p>تصنيف المستخدم</p>
               <p>إضافة   ازاله</p>
             </div>
-            <PaginationComponent itemsPerPage={7}></PaginationComponent>
+            <PaginationComponent itemsPerPage={7} isopen={isopen} openForm={openForm}></PaginationComponent>
           </div>
         </div>
         <div  className='showBut'>
@@ -52,7 +52,7 @@ function HomeContent() {
                                                         عرض الكل 
           </button>
         </div>
-        <AddNew isopen={isopen} openForm={openForm}></AddNew>
+        {/* <AddNew isopen={isopen} openForm={openForm}></AddNew> */}
     </div>
     
       

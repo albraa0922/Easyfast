@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import {usersData} from "./Object.js"
 import Additions from './Additions.js';
+import AddNew from "./AddNew.js"
+
 import "./PaginationComponent"
-function PaginationComponent({itemsPerPage}) {
-    const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = Math.ceil(usersData.length/itemsPerPage)
-    const currentData = usersData.slice((currentPage-1)*itemsPerPage,currentPage*itemsPerPage);
+function PaginationComponent({itemsPerPage, openForm, isopen}) {
+  const [allData, setAllData] = useState(usersData)
+  const [currentPage, setCurrentPage] = useState(1);
+
+    const totalPages = Math.ceil(allData.length/itemsPerPage)
+    const currentData = allData.slice((currentPage-1)*itemsPerPage,currentPage*itemsPerPage);
     const handleNextPage = () =>{
         if (currentPage < totalPages){
             setCurrentPage(currentPage + 1)
@@ -18,6 +22,10 @@ function PaginationComponent({itemsPerPage}) {
         setCurrentPage(pageNumber)
     }
 
+    const handleNewData = (data) => {
+      console.log("daddad", data);
+      setAllData([data ,...allData])
+    }
   return (
     <div className='pageBut'>
       {currentData?.map((user, index) =>(
@@ -48,7 +56,10 @@ function PaginationComponent({itemsPerPage}) {
           <button onClick={handleNextPage} disabled={currentData===totalPages}>
             التالي    
           </button>
+        <AddNew isopen={isopen} openForm={openForm} sendData = { handleNewData}></AddNew>
+
     </div>
+    
   )
 }
 
