@@ -5,7 +5,7 @@ import HomeCard from './HomeCard'
 import {cardData} from "./Object.js"
 import Buttuon from './Button.js'
 import PaginationComponent from './PaginationComponent.js'
-import AddNew from "./AddNew.js"
+import AuthorComponent from './.js'
 function HomeContent() {
   const [cards, setCards] = useState(cardData);
 
@@ -30,7 +30,7 @@ function HomeContent() {
           ))}
         </div>
         <div className='clear'></div>
-        <div className={show?"show" : ""}>
+        <div className={show?"show" : "hight"}>
           <div className='addtit'>
             <Buttuon handleClick={openForm}>إضافة سجل جديد   +</Buttuon>
             <p>اخر الاضافات</p>
@@ -52,7 +52,6 @@ function HomeContent() {
                                                         عرض الكل 
           </button>
         </div>
-        {/* <AddNew isopen={isopen} openForm={openForm}></AddNew> */}
     </div>
     
       

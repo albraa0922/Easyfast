@@ -1,0 +1,27 @@
+.msg{
+    overflow: hidden;
+    width: 430px;
+    margin: 0px auto 17px;
+    font-size: 12px;
+    color: #909EA2;
+}
+.msg :hover{ background-color: #909EA2;}
+.msg .msgTit{
+    width: 390px;
+    margin: auto;
+}
+
+.msg .msgTit img, .msgname{
+    float: right;
+}
+.msgTit .msgname{
+    margin: 2px 7px;
+    color: #333333cb;
+}
+.msg .msgP{
+    text-align: right;
+    margin:0 50px 0 20px;
+}
+.msg .msgTime{
+    margin: 5px 0 12px 0;
+}

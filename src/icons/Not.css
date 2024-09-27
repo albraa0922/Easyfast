@@ -1,0 +1,30 @@
+.not{
+    overflow: hidden;
+    width: 430px;
+    margin: 0px auto 8px;
+    font-size: 12px;
+    color: #909EA2;
+}
+.not :hover{ background-color: #909EA2;}
+
+.not img {
+    float: right;
+}
+.not p{
+    float: right;
+}
+.not .notLogo{
+    width: 25px;
+    text-align: center;
+    margin: 12px 10px;
+}
+.not .notP{
+    width: 300px;
+    text-align: right;
+    margin-bottom: 0;
+}
+.not .notTime{
+    width: 605x;
+    font-size: 12px;
+    margin: 15px 20px 0 0;
+}

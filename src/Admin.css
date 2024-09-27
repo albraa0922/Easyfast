@@ -3,7 +3,7 @@
     height: 63px;
     display: flex;
     justify-content: flex-end;    
-    box-shadow: 0px 4px 4px  #00000030;
+    box-shadow: 1px 2px 1px  #00000013;
 }
 .admin .info{
     text-align: right;
@@ -19,14 +19,23 @@
     color: #828282;
 }
 .admin .icon{
-    height: 24px;
-    width: 24px;
-    margin: 20px 30px 0 0;
+    height: 20px;
+    width: 20px;
+    margin: 20px 35px 0 0;
+    cursor: pointer;
 }
-
 .admin >img{
     width: 40px;
     height: 40px;
     margin: 11px 20px 8px 10px;
     border-radius: 4px;
 }
+.admin .admn {
+    width: 210px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    top: 84px;
+    box-shadow: 1px 2px 1px  #00000013;
+
+} 

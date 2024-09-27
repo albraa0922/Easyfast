@@ -1,0 +1,13 @@
+.Notification {
+    width: 470px;
+    height: 310px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
+    border-radius: 5px;
+}
+.Notification .notsCount{
+    float: right;
+    margin: 22px 18px 11px;
+    color: #118AB2;
+}

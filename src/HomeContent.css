@@ -7,6 +7,14 @@
     overflow: hidden;
     background-color: #fff;
     border-radius: 15px;
+    transition: all .5s ;
+}
+.hight{ height: 617px;
+    transition: all .3s ;
+}
+.addtit{
+    transition: all .3s ;
+
 }
 .HomeContent .showBut{
     width: 100%;

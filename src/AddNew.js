@@ -30,6 +30,12 @@ function AddNew({isopen, openForm, sendData}) {
         userCategory: formData.uesrCategory,
         userRate: formData.userRate,
         })
+        setFormData({ name :"",
+        email:"",
+        phon :"",
+        uesrCategory:"",
+        userRate:"",
+        code:""})
     }
   return (
       <div className='addNew' style={{display:(isopen ? "none" :"")}}>

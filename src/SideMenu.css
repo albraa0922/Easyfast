@@ -1,13 +1,14 @@
 .sidemenu{
     width: 16%;
-    height: 1024px;
+    height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
     background-color: #fff;
 }
 .sidemenu .menu-logo{
-    margin-top: 34px ;
+    width: 200px;
+    margin: 34px 0 0 15px;
 }
 .menu-link ul {
     margin-top: 40px;
@@ -15,9 +16,9 @@
     padding: 0;
 }
 .menu-link ul li {
-    width: 197px;
+    width: 170px;
     height: 35px;
-    margin: 0 1px 15px;
+    margin: 0 25px 15px;
     text-align: right;
 }
 .menu-link ul li svg{

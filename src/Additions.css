@@ -10,6 +10,7 @@
 .addtit{
     background-color: #fff;
     margin-top: 30px;
+    transition: all .5s ;
     padding-top: 20px;
 }
 .addtit p{
@@ -61,7 +62,7 @@
     margin: 19px 37px  0;
 }
 .additions p img{
-    margin: -10px 0 0 15px;
+    margin: -10px 0 12px 15px;
 }
 .additions button{
     height: 40px;

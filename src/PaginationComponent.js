@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, } from 'react'
 import {usersData} from "./Object.js"
 import Additions from './Additions.js';
 import AddNew from "./AddNew.js"
@@ -6,8 +6,8 @@ import AddNew from "./AddNew.js"
 import "./PaginationComponent"
 function PaginationComponent({itemsPerPage, openForm, isopen}) {
   const [allData, setAllData] = useState(usersData)
-  const [currentPage, setCurrentPage] = useState(1);
 
+    const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(allData.length/itemsPerPage)
     const currentData = allData.slice((currentPage-1)*itemsPerPage,currentPage*itemsPerPage);
     const handleNextPage = () =>{
@@ -32,8 +32,8 @@ function PaginationComponent({itemsPerPage, openForm, isopen}) {
             <Additions
             key      = {index}
             index    = {index}
-            userName = {user.userInfo.name}
-            userPohto= {user.userInfo.photo}
+            userName = {user.name}
+            userPohto= {user.photo}
             email    = {user.email}
             code     = {user.code}
             userCategory={user.userCategory}

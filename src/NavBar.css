@@ -9,6 +9,11 @@
 .nav-admin{
     margin: 20px 0 0 52px  ;
 }
-.not{
+.navbar .navNot{
+    width: 24px;
+    height: 24px;
     margin: 40px 0 0 24px;  
+}
+.navbar .navNot:hover{
+    cursor: pointer;
 }
