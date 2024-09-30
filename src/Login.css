@@ -1,0 +1,46 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: #216E87;
+    position: relative;
+}
+.login form{
+    position: fixed;
+    width: 496px;
+    height: 466px;
+    margin: 85px 435px;
+    background-color: #fff;
+    padding: 2rem;
+}
+.login form .lgLogo{
+    width: 188px;
+    margin: 25px auto;
+}
+.login form label{
+    color: #02151B;
+    float: right;
+    margin: 8px 0;
+}
+.login form input{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 26px ;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #00000015;
+}
+.login form .logbut{
+    width: 100%;
+    height: 56px;
+    margin: 28px auto;
+}
+.login form .errorMessage {
+    position: absolute;
+    top: 305px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}

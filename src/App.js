@@ -4,8 +4,10 @@ import Home from './Home';
 import Members from "./pages/Members"
 import AppData from './pages/AppData';
 import Condition from './pages/Condition';
-import OrderBar from './pages/OrderBar';
 import Settings from './pages/Settings';
+import Login from './Login';
+import Join from './pages/Join';
+import ChangePassword from './pages/ChangePassword';
 
 
 function App() {
@@ -13,12 +15,14 @@ function App() {
     <div className="App">
        <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Members" element={<Members/>} />
-          <Route path="Appdata" element={<AppData />} />
+          {/* <Route path='/'   element={<Login/>}/> */}
+          <Route path="/"         element={<Home />} />
+          <Route path="Members"   element={<Members/>} />
+          <Route path="Join"      element={<Join/>} />
+          <Route path="Appdata"   element={<AppData />} />
           <Route path="Condition" element={<Condition />} />
-          <Route path="OrderBar" element={<OrderBar />} />
-          <Route path="Settings" element={<Settings />} />
+          <Route path="ChangePassword"  element={<ChangePassword />} />
+          <Route path="Settings"  element={<Settings />} />
       </Routes>
     </BrowserRouter>
       

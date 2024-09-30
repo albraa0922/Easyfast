@@ -3,7 +3,7 @@ import "./Button.css"
 
 function Buttuon(props) {
   return (
-    <button onClick={props.handleClick} className='but'>
+    <button onClick={props.handleClick}  className={ props.className+' but'}>
       {props.children}
     </button>
   )

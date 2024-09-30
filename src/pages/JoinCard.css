@@ -1,0 +1,53 @@
+.JoinCard{
+    position: relative;
+    float: right;
+    margin-left: 31px;
+    width: 255px;
+    height: 500px;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 8px;
+}
+.JoinCard div, .JoinCard p {
+    float: right;
+    text-align: right;
+    font-size: 18px;
+}
+.JoinCard .pri{
+    color: black;
+    width: 65px;
+    margin: 0;
+    font-size: 28px;
+}
+.JoinCard .time{
+    margin: 12px;
+    width: 100px;
+}
+.JoinCard h2{  
+    text-align: right;
+    margin: 20px 0 0px ;
+    color: #333333;
+}
+.JoinCard .info{
+    color: #4F4F4F;
+}
+.JoinCard >p{
+    margin: 8px 0;
+    color: #848199;
+}
+.JoinCard button{
+    position: absolute;
+    width: 220px;
+    top : 420px;
+    height: 40px;
+    color: #118AB2;
+    background-color: #E7F3F7;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all .3s ;
+}
+.JoinCard button:hover {
+     color: #fff;
+    background-color: rgba(17,138,178,.9);
+}

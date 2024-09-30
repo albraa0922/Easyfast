@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import "./Admin.css"
 import adminPoto from './Imges/Rectangle 1074.png'
+import { Link } from 'react-router-dom'
 
 function Admin() {
 
-  const [openAdmin, setOpenAdmin] = useState(false)
+  const [openAdmin, setOpenAdmin] = useState(true)
   const handleAdmin = () =>{
     setOpenAdmin(!openAdmin)
   }
-
+  useEffect(() =>{
+    
+  },[openAdmin])
   return (
     <div className='admin'>
       <div className='icon' onClick={handleAdmin}>
@@ -22,7 +25,8 @@ function Admin() {
       </div>
       <img src={adminPoto} alt='admin poto'></img>
       <div className='admn' style={{display:(openAdmin ? "none" :"")}}>
-
+        <Link><span>الملف الشخصي</span></Link>
+        <Link to="/ChangePassword"><span>تغيير كلمة المرور</span></Link>
       </div>
     </div>
   )

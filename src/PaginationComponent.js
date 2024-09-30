@@ -23,7 +23,6 @@ function PaginationComponent({itemsPerPage, openForm, isopen}) {
     }
 
     const handleNewData = (data) => {
-      console.log("daddad", data);
       setAllData([data ,...allData])
     }
   return (

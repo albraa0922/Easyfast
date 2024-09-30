@@ -62,9 +62,8 @@ function SideMenu() {
         </svg>
       </div>
       <div className='menu-link'>
-        
         <ul>
-          <li className={ location.pathname==="/"? "active" : ""}>
+          <li className={ location.pathname==="/Home"? "active" : ""}>
             <svg className='left' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -72,6 +71,19 @@ function SideMenu() {
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 11.3334V16.3334" stroke="#0F7CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M2.5 9.24162C2.5 6.64162 7.39167 2.16663 10 2.16663C12.6083 2.16663 17.5 6.64162 17.5 9.24162V15.5583C17.4847 16.4322 17.1268 17.2651 16.5033 17.8777C15.8798 18.4902 15.0407 18.8334 14.1667 18.8333H5.83333C4.95929 18.8334 4.12016 18.4902 3.49669 17.8777C2.87322 17.2651 2.5153 16.4322 2.5 15.5583V9.22494" stroke="#0F7CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </li>
+          <li className={ location.pathname==="/Members"? "active" : ""}>
+            <svg className='left' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <Link to="/Join">الاشتراك</Link>
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.819 11.1668H1.20898" stroke="#118AB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.49805 7.76671C2.97305 4.86671 4.40638 3.43337 7.30638 2.95837" stroke="#118AB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.30643 17.9918C4.40643 17.5085 2.9731 16.0835 2.4981 13.1835L2.49727 13.1868C2.39643 12.5868 2.33893 11.9118 2.32227 11.1702" stroke="#118AB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.7052 11.17C17.6885 11.9117 17.6302 12.5867 17.5302 13.1867L17.5318 13.1834C17.056 16.0834 15.6227 17.5084 12.7227 17.9917" stroke="#118AB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.7227 2.95837C15.6227 3.43337 17.056 4.86671 17.531 7.76671" stroke="#118AB2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </li>
           <li className={ location.pathname==="/Members"? "active" : ""}>
@@ -115,15 +127,13 @@ function SideMenu() {
               <path d="M8.33317 7.5H7.49984H6.6665" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </li> 
-          <li className={ location.pathname==="/OrderBar"? "active" : ""}>
+          <li className={ location.pathname==="/ChangePassword"? "active" : ""}>
              <svg className='left'width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <Link to="/OrderBar">ضبط شريط الطلب</Link>
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.99984 13.8333C11.8408 13.8333 13.3332 12.3409 13.3332 10.5C13.3332 8.65901 11.8408 7.16663 9.99984 7.16663C8.15889 7.16663 6.6665 8.65901 6.6665 10.5C6.6665 12.3409 8.15889 13.8333 9.99984 13.8333Z" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M0.875 10.5H5.83333" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.1748 10.5H19.1331" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <Link to="/ChangePassword">تغيير كلمة المرور</Link>
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.8333 7.33329H14.6667C15.1269 7.33329 15.5 7.70638 15.5 8.16663V16.5C15.5 16.9602 15.1269 17.3333 14.6667 17.3333H1.33333C0.8731 17.3333 0.5 16.9602 0.5 16.5V8.16663C0.5 7.70638 0.8731 7.33329 1.33333 7.33329H2.16667V6.49996C2.16667 3.2783 4.77834 0.666626 8 0.666626C11.2217 0.666626 13.8333 3.2783 13.8333 6.49996V7.33329ZM2.16667 8.99996V15.6666H13.8333V8.99996H2.16667ZM7.16667 10.6666H8.83333V14H7.16667V10.6666ZM12.1667 7.33329V6.49996C12.1667 4.19878 10.3012 2.33329 8 2.33329C5.69882 2.33329 3.83333 4.19878 3.83333 6.49996V7.33329H12.1667Z" fill="#0E6E8E"/>
             </svg>
           </li> 
           <li className={ location.pathname==="/Settings"? "active" : ""}>
