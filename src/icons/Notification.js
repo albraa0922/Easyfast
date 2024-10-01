@@ -3,7 +3,7 @@ import "./Notification.css"
 import Not from './Not'
 import {userNot} from "../Object"
 
-function Notification({isopen}) {
+function Notification() {
   const[nots , setNots] = useState(userNot)
 
   useEffect(() => {
@@ -18,7 +18,7 @@ function Notification({isopen}) {
    
   const notsCount = nots.length
   return (
-   <div className='Notification' style={{display:(isopen ? "" :"none")}}>
+   <div className='Notification' >
     <p className='notsCount'> لديك {notsCount} إشعارات</p>
     {nots?.map((not) => (
       <Not 

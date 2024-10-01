@@ -17,7 +17,10 @@ function AddNew({isopen, openForm, sendData}) {
         setFormData ({...formData, [name]:value})
     }
     
-    const toggleMenu = (event) => event.preventDefault();
+    const onSubmit = (event) => event.preventDefault();
+    const closeAddNew = () => {
+        openForm()
+    }
     const handleClick = () => {
         openForm()
         sendData({
@@ -38,10 +41,11 @@ function AddNew({isopen, openForm, sendData}) {
         code:""})
     }
   return (
-      <div className='addNew' style={{display:(isopen ? "none" :"")}}>
+      <div className='addNew' style={{display:(isopen ? "" :"none")}}>
         <div className='theAadd'>
             <h2>إضافة عنصر جديد</h2>
-            <form className='addcont' onSubmit={toggleMenu}>
+            <span className='close' onClick={closeAddNew}>الغاء</span>
+            <form className='addcont' onSubmit={onSubmit}>
                 <div className='right'>
                 <label>اسم المستخدم</label>
                 <input

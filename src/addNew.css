@@ -20,6 +20,14 @@
     margin: 0px 25px 20px 730px ;
     padding-top: 70px;
 }
+.theAadd .close{
+    color: #118AB2;
+    font-size: 18px;
+    position: absolute;
+    top: 102px;
+    left: 263px;
+    cursor: pointer;
+}
 .theAadd .addcont{
     height:300px ;
     width: 100%;

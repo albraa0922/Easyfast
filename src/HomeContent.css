@@ -32,10 +32,11 @@
     border: none;
 }
 .HomeContent .showBut button svg{
+    width: 0;
     margin: 5px;
 }
 .pageBut button{
-    background-color: #fff;
+    background-color: inherit;
     border: none;
     float: right;
     cursor: pointer;

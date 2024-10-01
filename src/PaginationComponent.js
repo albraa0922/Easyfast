@@ -4,12 +4,16 @@ import Additions from './Additions.js';
 import AddNew from "./AddNew.js"
 
 import "./PaginationComponent"
-function PaginationComponent({itemsPerPage, openForm, isopen}) {
+function PaginationComponent( props) {
   const [allData, setAllData] = useState(usersData)
+  const removeItem = (index) => {
+    const updatedData = allData.filter((_, i) => i !== index);
+    setAllData(updatedData);
+};
 
     const [currentPage, setCurrentPage] = useState(1);
-    const totalPages = Math.ceil(allData.length/itemsPerPage)
-    const currentData = allData.slice((currentPage-1)*itemsPerPage,currentPage*itemsPerPage);
+    const totalPages = Math.ceil(allData.length/props.itemsPerPage)
+    const currentData = allData.slice((currentPage-1)*props.itemsPerPage,currentPage*props.itemsPerPage);
     const handleNextPage = () =>{
         if (currentPage < totalPages){
             setCurrentPage(currentPage + 1)
@@ -21,7 +25,7 @@ function PaginationComponent({itemsPerPage, openForm, isopen}) {
     const goToPage = (pageNumber) =>{
         setCurrentPage(pageNumber)
     }
-
+    
     const handleNewData = (data) => {
       setAllData([data ,...allData])
     }
@@ -37,6 +41,7 @@ function PaginationComponent({itemsPerPage, openForm, isopen}) {
             code     = {user.code}
             userCategory={user.userCategory}
             userRate = {user.userRate}
+            removeItem = {removeItem}
             >
             </Additions>
           ))}
@@ -55,8 +60,7 @@ function PaginationComponent({itemsPerPage, openForm, isopen}) {
           <button onClick={handleNextPage} disabled={currentData===totalPages}>
             التالي    
           </button>
-        <AddNew isopen={isopen} openForm={openForm} sendData = { handleNewData}></AddNew>
-
+        <AddNew isopen={props.isopen} openForm={props.openForm} sendData = { handleNewData}></AddNew>
     </div>
     
   )

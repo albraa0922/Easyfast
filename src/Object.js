@@ -92,201 +92,165 @@ export const userMessages  = [{
         sentAt: "2024-09-26T07:50:00.000Z"
 },
 ]
-export const usersData = [{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
-        },
-        email: "admin@admin.com",
-        code: 12345,
-        userCategory: "فرد",
-        userRate: "مالك",
-},
+export const usersData = [
 {
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
-        },
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
 },
-{
-        userInfo :{
-                name: "وجيه ",
-                photo : {im}
-        },
+        {
+        name: " عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه ",
-                photo : {im}
         },
+        {
+        name: "وجيه ",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه ",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه ",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: " عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: "وجيه عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: " عوض",
-                photo : {im}
         },
+        {
+        name: " عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: " عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: " عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},{
-        userInfo :{
-                name: " عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه عوض",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
-{
-        userInfo :{
-                name: " عوض",
-                photo : {im}
         },
+        {
+        name: "وجيه ",
+        photo : {im},
         email: "admin@admin.com",
         code: 12345,
         userCategory: "فرد",
         userRate: "مالك",
-},
+        },
+        {
+        name: "وجيه عوض",
+        photo : {im},
+        email: "admin@admin.com",
+        code: 12345,
+        userCategory: "فرد",
+        userRate: "مالك",
+        },
 ]

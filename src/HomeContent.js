@@ -5,14 +5,14 @@ import HomeCard from './HomeCard'
 import {cardData} from "./Object.js"
 import Buttuon from './Button.js'
 import PaginationComponent from './PaginationComponent.js'
-import AuthorComponent from './.js'
 function HomeContent() {
   const [cards, setCards] = useState(cardData);
 
   const [show, setShow] = useState(true)
-  const change =() =>  setShow(!show)
-
-  const [isopen, setIsopen] = useState(true)
+  const change =() => { 
+     setShow(!show)
+  }
+  const [isopen, setIsopen] = useState(false)
   const openForm = () =>{
         setIsopen(!isopen)
   }
@@ -46,11 +46,11 @@ function HomeContent() {
           </div>
         </div>
         <div  className='showBut'>
-          <button onClick={change}><svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {show && <button onClick={change}><svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                           <path d="M12.8332 1.5L8.6665 5.79993C8.45229 6.02692 8.19392 6.20774 7.90733 6.33134C7.62073 6.45494 7.31195 6.51872 6.99984 6.51872C6.68773 6.51872 6.37889 6.45494 6.0923 6.33134C5.8057 6.20774 5.54739 6.02692 5.33317 5.79993L1.1665 1.5" stroke="#0F7CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                                         </svg>
                                                         عرض الكل 
-          </button>
+          </button>}
         </div>
     </div>
     
