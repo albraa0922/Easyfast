@@ -1,13 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './Home';
+import Home from './Home/Home';
 import Members from "./pages/Members"
 import AppData from './pages/AppData';
 import Condition from './pages/Condition';
 import Settings from './pages/Settings';
-import Login from './Login';
-import Join from './pages/Join';
-import ChangePassword from './pages/ChangePassword';
+import Join from './Join/Join';
+import ChangePassword from './ChangePassword';
+import Login from "./Login"
 
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
     <div className="App">
        <BrowserRouter>
       <Routes>
-          {/* <Route path='/'   element={<Login/>}/> */}
-          <Route path="/"         element={<Home />} />
+          <Route path='/'   element={<Login/>}/>
+          <Route path="/Home"         element={<Home />} />
           <Route path="Members"   element={<Members/>} />
           <Route path="Join"      element={<Join/>} />
           <Route path="Appdata"   element={<AppData />} />

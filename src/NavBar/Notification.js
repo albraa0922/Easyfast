@@ -1,20 +1,20 @@
 import React, { useState , useEffect} from 'react'
 import "./Notification.css"
-import Not from './Not'
+import Not from '../NavBar/Not'
 import {userNot} from "../Object"
 
 function Notification() {
   const[nots , setNots] = useState(userNot)
 
-  useEffect(() => {
-    setInterval(() => {
-      setNots(userNot.map((not) => ({
-        ...not,
-        sentAt: new Date(not.sentAt).toISOString()
-      })));
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     setNots(userNot.map((not) => ({
+  //       ...not,
+  //       sentAt: new Date(not.sentAt).toISOString()
+  //     })));
       
-    }, 1000);
-  }, []);
+  //   }, 1000);
+  // }, []);
    
   const notsCount = nots.length
   return (

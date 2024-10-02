@@ -1,9 +1,7 @@
 import React from 'react'
-import NavBar from './NavBar'
-import SideMenu from './SideMenu'
+import NavBar from '../NavBar/NavBar'
+import SideMenu from '../SideMenu'
 import HomeContent from './HomeContent'
-import Login from './Login'
-
 function Home() {
   return (
     <div className='Home'>

@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import "./ChangePassword.css"
-import Button from "../Button"
-import SideMenu from '../SideMenu'
-import NavBar from '../NavBar'
+import Button from "./Button"
+import SideMenu from './SideMenu'
+import NavBar from './NavBar/NavBar'
 import { useNavigate } from 'react-router-dom'
 
 function ChangePassword() {

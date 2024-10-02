@@ -3,7 +3,7 @@ import "./Join.css"
 import SideMenu from '../SideMenu'
 import { loginData } from '../Object'
 import JoinCard from './JoinCard'
-import NavBar from '../NavBar'
+import NavBar from '../NavBar/NavBar'
 
 function Join() {
     const [loginCards, setLoginCards] = useState(loginData)

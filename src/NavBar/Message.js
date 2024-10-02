@@ -23,7 +23,6 @@ function Message() {
           </Msg>
         ))}
       </div>
-      <Link>عرض الكل</Link>
     </div>
   )
 }

@@ -67,13 +67,13 @@ function SideMenu() {
             <svg className='left' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <Link to="/">الرئسية</Link>
+            <Link to="/Home">الرئسية</Link>
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10 11.3334V16.3334" stroke="#0F7CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M2.5 9.24162C2.5 6.64162 7.39167 2.16663 10 2.16663C12.6083 2.16663 17.5 6.64162 17.5 9.24162V15.5583C17.4847 16.4322 17.1268 17.2651 16.5033 17.8777C15.8798 18.4902 15.0407 18.8334 14.1667 18.8333H5.83333C4.95929 18.8334 4.12016 18.4902 3.49669 17.8777C2.87322 17.2651 2.5153 16.4322 2.5 15.5583V9.22494" stroke="#0F7CA0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </li>
-          <li className={ location.pathname==="/Members"? "active" : ""}>
+          <li className={ location.pathname==="/Join"? "active" : ""}>
             <svg className='left' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -95,7 +95,16 @@ function SideMenu() {
               <path d="M16.6668 18V16.3333C16.6668 15.4493 16.3156 14.6014 15.6905 13.9763C15.0654 13.3512 14.2176 13 13.3335 13H6.66683C5.78277 13 4.93493 13.3512 4.30981 13.9763C3.68469 14.6014 3.3335 15.4493 3.3335 16.3333V18" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M9.99984 9.66667C11.8408 9.66667 13.3332 8.17428 13.3332 6.33333C13.3332 4.49238 11.8408 3 9.99984 3C8.15889 3 6.6665 4.49238 6.6665 6.33333C6.6665 8.17428 8.15889 9.66667 9.99984 9.66667Z" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </li>
+          </li> 
+          <li className={ location.pathname==="/ChangePassword"? "active" : ""}>
+            <svg className='left'width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <Link to="/ChangePassword">تغيير كلمة المرور</Link>
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.8333 7.33329H14.6667C15.1269 7.33329 15.5 7.70638 15.5 8.16663V16.5C15.5 16.9602 15.1269 17.3333 14.6667 17.3333H1.33333C0.8731 17.3333 0.5 16.9602 0.5 16.5V8.16663C0.5 7.70638 0.8731 7.33329 1.33333 7.33329H2.16667V6.49996C2.16667 3.2783 4.77834 0.666626 8 0.666626C11.2217 0.666626 13.8333 3.2783 13.8333 6.49996V7.33329ZM2.16667 8.99996V15.6666H13.8333V8.99996H2.16667ZM7.16667 10.6666H8.83333V14H7.16667V10.6666ZM12.1667 7.33329V6.49996C12.1667 4.19878 10.3012 2.33329 8 2.33329C5.69882 2.33329 3.83333 4.19878 3.83333 6.49996V7.33329H12.1667Z" fill="#0E6E8E"/>
+            </svg>
+          </li> 
           <li className={ location.pathname==="/Appdata"? "active" : ""}>
             <svg className='left'width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,16 +135,7 @@ function SideMenu() {
               <path d="M13.3332 14.1666H6.6665" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8.33317 7.5H7.49984H6.6665" stroke="#909EA2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </li> 
-          <li className={ location.pathname==="/ChangePassword"? "active" : ""}>
-             <svg className='left'width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <Link to="/ChangePassword">تغيير كلمة المرور</Link>
-            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.8333 7.33329H14.6667C15.1269 7.33329 15.5 7.70638 15.5 8.16663V16.5C15.5 16.9602 15.1269 17.3333 14.6667 17.3333H1.33333C0.8731 17.3333 0.5 16.9602 0.5 16.5V8.16663C0.5 7.70638 0.8731 7.33329 1.33333 7.33329H2.16667V6.49996C2.16667 3.2783 4.77834 0.666626 8 0.666626C11.2217 0.666626 13.8333 3.2783 13.8333 6.49996V7.33329ZM2.16667 8.99996V15.6666H13.8333V8.99996H2.16667ZM7.16667 10.6666H8.83333V14H7.16667V10.6666ZM12.1667 7.33329V6.49996C12.1667 4.19878 10.3012 2.33329 8 2.33329C5.69882 2.33329 3.83333 4.19878 3.83333 6.49996V7.33329H12.1667Z" fill="#0E6E8E"/>
-            </svg>
-          </li> 
+          </li>
           <li className={ location.pathname==="/Settings"? "active" : ""}>
              <svg className='left'width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.99943 12.6667L6.55941 9.33337C6.37782 9.162 6.23316 8.95539 6.13428 8.72611C6.0354 8.49684 5.98438 8.24973 5.98438 8.00004C5.98438 7.75035 6.0354 7.50324 6.13428 7.27397C6.23316 7.04469 6.37782 6.83808 6.55941 6.66671L9.99943 3.33337" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

@@ -1,9 +1,9 @@
 import React, { useState, } from 'react'
-import {usersData} from "./Object.js"
+import {usersData} from "../Object.js"
 import Additions from './Additions.js';
 import AddNew from "./AddNew.js"
+import "./PaginationComponent.js"
 
-import "./PaginationComponent"
 function PaginationComponent( props) {
   const [allData, setAllData] = useState(usersData)
   const removeItem = (index) => {
@@ -45,7 +45,8 @@ function PaginationComponent( props) {
             >
             </Additions>
           ))}
-          <button onClick={handlePreviousPage} disabled={currentPage===1}>
+          {props.change && <div>
+           <button onClick={handlePreviousPage} disabled={currentPage===1}>
             السابق    
           </button>
           {Array.from({ length: totalPages }, (_, index) => (
@@ -56,11 +57,12 @@ function PaginationComponent( props) {
             >
               {index + 1}
             </button>
-      ))}
+          ))}
           <button onClick={handleNextPage} disabled={currentData===totalPages}>
             التالي    
-          </button>
-        <AddNew isopen={props.isopen} openForm={props.openForm} sendData = { handleNewData}></AddNew>
+          </button></div>
+          }
+        {props.isopen && <AddNew  openForm={props.openForm} sendData = { handleNewData}></AddNew>}
     </div>
     
   )

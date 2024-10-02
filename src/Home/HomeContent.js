@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import "./HomeContent.css"
-import HomeCard from './HomeCard'
-import {cardData} from "./Object.js"
-import Buttuon from './Button.js'
+import HomeCard from './HomeCard.js'
+import {cardData} from "../Object.js"
+import Buttuon from '../Button.js'
 import PaginationComponent from './PaginationComponent.js'
 function HomeContent() {
   const [cards, setCards] = useState(cardData);
@@ -42,7 +42,7 @@ function HomeContent() {
               <p>تصنيف المستخدم</p>
               <p>إضافة   ازاله</p>
             </div>
-            <PaginationComponent itemsPerPage={7} isopen={isopen} openForm={openForm}></PaginationComponent>
+            <PaginationComponent itemsPerPage={7} isopen={isopen} openForm={openForm} change={change}></PaginationComponent>
           </div>
         </div>
         <div  className='showBut'>

@@ -1,6 +1,6 @@
 .message {
     width: 470px;
-    height: 350px;
+    height: 325px;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
@@ -13,10 +13,4 @@
 }
 .message .mCont{
     height: 300px;
-}
-.message a{
-    width: 60px;
-    display: flex;
-    margin: 7px auto;
-    color: #118AB2;
 }

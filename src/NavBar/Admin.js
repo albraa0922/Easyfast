@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./Admin.css"
-import adminPoto from './Imges/Rectangle 1074.png'
+import adminPoto from '../Imges/Rectangle 1074.png'
 import { Link } from 'react-router-dom'
 
 function Admin() {

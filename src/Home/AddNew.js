@@ -1,9 +1,9 @@
 import React ,{ useState }from 'react'
-import Button from "./Button"
+import Button from "../Button"
 import "./addNew.css" 
-import  im from"./Imges/Rectangle 1074.png"
+import  im from"../Imges/Rectangle 1074.png"
 
-function AddNew({isopen, openForm, sendData}) {
+function AddNew({ openForm, sendData}) {
     const [formData ,setFormData] = useState({
         name :"",
         email:"",
@@ -24,10 +24,8 @@ function AddNew({isopen, openForm, sendData}) {
     const handleClick = () => {
         openForm()
         sendData({
-            userInfo :{
-                name: formData.name,
-                photo : {im}
-        },
+        name: formData.name,
+        photo : {im},
         email: formData.email,
         code: formData.code,
         userCategory: formData.uesrCategory,
@@ -41,7 +39,7 @@ function AddNew({isopen, openForm, sendData}) {
         code:""})
     }
   return (
-      <div className='addNew' style={{display:(isopen ? "" :"none")}}>
+      <div className='addNew'>
         <div className='theAadd'>
             <h2>إضافة عنصر جديد</h2>
             <span className='close' onClick={closeAddNew}>الغاء</span>

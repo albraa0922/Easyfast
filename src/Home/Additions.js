@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Additions.css"
-import im from"./Imges/Rectangle 7833.png"
+import im from"../Imges/Rectangle 7833.png"
 
 
 function Additions(props) {

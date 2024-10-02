@@ -1,5 +1,7 @@
 import React from 'react'
 import "./JoinCard.css"
+import {Link} from "react-router-dom";
+
 
 function JoinCard(props) {
   return (
@@ -56,7 +58,9 @@ function JoinCard(props) {
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.41797 10.0001C1.41797 16.9371 3.73097 19.2501 10.668 19.2501C17.605 19.2501 19.918 16.9371 19.918 10.0001C19.918 3.06312 17.605 0.750122 10.668 0.750122C3.73097 0.750122 1.41797 3.06312 1.41797 10.0001Z" stroke="#B5DBE7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </p>
+        <Link to={"/"}>
         <button>اشترك الان</button>
+        </Link>
     </div>
   )
 }
