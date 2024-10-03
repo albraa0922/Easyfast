@@ -8,11 +8,8 @@
     position: absolute;
     width: 496px;
     height: 466px;
-    margin: 85px auto;
     background-color: #fff;
     padding: 2rem;
-    /* top: 13%;
-    left: 31%; */
   }
 .login form .lgLogo{
     width: 188px;
