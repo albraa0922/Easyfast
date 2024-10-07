@@ -3,7 +3,7 @@
     float: right;
     margin-left: 31px;
     width: 255px;
-    height: 500px;
+    min-height: 500px;
     background-color: #fff;
     padding: 18px;
     border-radius: 8px;
@@ -36,14 +36,12 @@
     color: #848199;
 }
 .JoinCard button{
-    position: absolute;
     width: 220px;
-    top : 420px;
     height: 40px;
     background-color: #E7F3F7;
     border: none;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
     transition: all .3s ;
     cursor: pointer;
 }

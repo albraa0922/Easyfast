@@ -7,8 +7,7 @@
     overflow: hidden;
     z-index: 999;
     background-color: #62798154;
-}
-.addNew .theAadd{
+}.theAadd{
     width: 900px;
     height: 580px;
     background-color: #fff;
@@ -54,4 +53,33 @@
 .addcont Button{
     margin: 25px 30px 20px 778px ;
     background-color: #118AB2;
+}
+
+@media (max-width: 480px) {
+    .theAadd{
+        position: relative;
+        width: 365px;
+        height: 850px;
+        margin: 30px auto;
+}
+.theAadd h2{
+    margin: 0px 20px 20px 160px ;
+    padding-top: 50px;
+    text-align: right;
+}
+.theAadd .close{
+    top: 50px;
+    left: 30px;
+}
+.addcont div{
+    width: 335px;
+    margin:28px auto ;
+}
+.addcont .right{float: none;}
+.addcont .left {float: none;}
+.addcont Button{
+    width: 92%;
+    margin: 0 4%;
+    float: none;
+}
 }
