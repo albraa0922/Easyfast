@@ -67,8 +67,9 @@
     .admin .icon{display: none};
     .admn.open{
         height: 120px;
-        width:96%;
-        left: 2%;
+        width:365px;
+        left: 50%;
+        transform: translate(-50%, 0%);
         top: 90px;
     }
 }
