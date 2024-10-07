@@ -1,6 +1,5 @@
 .HomeContent{
     width: 80%;
-    margin-top: 85px;
     margin-left: 3%;
 }
  .show{
@@ -9,14 +8,9 @@
     overflow: hidden;
     background-color: #fff;
     border-radius: 15px;
-    transition: all .5s ;
 }
-.hight{ height: 617px;
-    transition: all .3s ;
-}
-.addtit{
-    transition: all .3s ;
-
+.hight{ 
+    height: 617px;
 }
 .HomeContent .showBut{
     width: 100%;
@@ -47,8 +41,12 @@
     color: rgb(0, 0, 0);
 }
 
-
-
 .clear{
     clear: both;
+}
+@media (max-width: 480px) {
+    .HomeContent{
+        width: 100%;
+        margin: 0%;
+    }
 }

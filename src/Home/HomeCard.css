@@ -3,7 +3,7 @@
     height: 150px;
     background-color: #FCFDFD;
     float: right;
-    margin: 20px 10px ;
+    margin: 20px 1% ;
     border-radius: 13px;
 }
 .card .up {
@@ -67,4 +67,19 @@
     padding: 5px 5px;
     margin: 0px 0px;
     width: 43px;
+}
+
+@media (max-width: 480px) {
+    .card{
+        width: 92%;
+        float: none;
+        margin: 20px auto;
+    }
+    .card .oddww {
+        margin-left: 59%;
+    }
+    .card .evenww {
+        margin-left: 59%;
+    }
+    
 }

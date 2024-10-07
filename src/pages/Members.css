@@ -1,0 +1,11 @@
+.pageCont{
+    width : 1030px;
+    margin: 15px 60px 40px
+}
+@media (max-width: 480px){
+    .pageCont{
+        width:96% ;
+        margin: 15px auto;
+        overflow-x: scroll;
+    }
+}

@@ -2,9 +2,9 @@ import React from 'react'
 import"./SideMenu.css"
 import {Link, useLocation} from "react-router-dom";
 
-
 function SideMenu() {
   const location = useLocation();
+  
   return (
     <div className='sidemenu'>
       <div className='menu-logo'>

@@ -1,24 +1,14 @@
-import React, { useState , useEffect} from 'react'
+import React, { useState } from 'react'
 import "./Notification.css"
 import Not from '../NavBar/Not'
 import {userNot} from "../Object"
 
-function Notification() {
+function Notification({isopen}) {
   const[nots , setNots] = useState(userNot)
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     setNots(userNot.map((not) => ({
-  //       ...not,
-  //       sentAt: new Date(not.sentAt).toISOString()
-  //     })));
-      
-  //   }, 1000);
-  // }, []);
-   
   const notsCount = nots.length
+  
   return (
-   <div className='Notification' >
+   <div  className={`Notification ${isopen ? 'open' : ''}`}>
     <p className='notsCount'> لديك {notsCount} إشعارات</p>
     {nots?.map((not) => (
       <Not 

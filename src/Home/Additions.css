@@ -10,7 +10,6 @@
 .addtit{
     background-color: #fff;
     margin-top: 30px;
-    transition: all .5s ;
     padding-top: 20px;
 }
 .addtit p{
@@ -71,4 +70,13 @@
     padding: 0;
     margin: -6px 12px 0 0px;
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .addtit{
+overflow-x: scroll;
+}
+.addtit >p{
+    margin: 25px -605px;
+}
 }

@@ -45,7 +45,7 @@ function PaginationComponent( props) {
             >
             </Additions>
           ))}
-          {props.change && <div>
+          {props.change && <div >
            <button onClick={handlePreviousPage} disabled={currentPage===1}>
             السابق    
           </button>

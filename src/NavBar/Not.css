@@ -23,7 +23,22 @@
     margin-bottom: 0;
 }
 .not .notTime{
-    width: 605x;
     font-size: 12px;
     margin: 15px 20px 0 0;
+}
+
+@media (max-width: 480px){
+    .not{
+        width: 95%;
+        margin: 0px auto 8px;
+        font-size: 12px;
+    }
+    .not .notP{
+        width: 217px;
+    }
+    .not .notTime{
+        font-size: 12px;
+        margin: 25px 2px 0 0;
+    }
+
 }

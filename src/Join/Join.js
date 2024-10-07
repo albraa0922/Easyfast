@@ -9,8 +9,10 @@ function Join() {
     const [loginCards, setLoginCards] = useState(loginData)
     console.log(loginCards.price)
   return (
-    <div className='join'>
-        <NavBar></NavBar>
+    <div>
+      <NavBar></NavBar>
+      <SideMenu/>
+      <div className='join'>
         {loginCards?.map((loginCard, index) =>(
             <JoinCard
             index = {index}
@@ -22,9 +24,9 @@ function Join() {
            >
             </JoinCard>
         ))}
-        
-      <SideMenu/>
+      </div>
     </div>
+    
   )
 }
 

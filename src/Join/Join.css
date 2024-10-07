@@ -1,6 +1,14 @@
 .join{
     width: 900px;
-    height: 0px;
+    /* height: 540px; */
     padding: 20px;
     margin: 85px  117px 0;
+}
+
+@media (max-width: 480px) {
+    .join{
+        width: 255px;
+        padding: 0px;
+        margin: auto;
+    }
 }

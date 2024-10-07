@@ -1,13 +1,27 @@
 .Notification {
-    width: 470px;
-    height: 310px;
+    width: 0px;
+    height: 0px;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     border-radius: 5px;
+    transition: all 0.2s ease-in-out; 
+}
+.Notification.open{
+    width: 470px;
+    height: 310px;
 }
 .Notification .notsCount{
     float: right;
     margin: 22px 18px 11px;
     color: #118AB2;
+}
+
+@media (max-width: 480px){
+    .Notification.open {
+        position: absolute;
+        left: 2.5%;
+        top: 90px;
+        width: 95%;
+    }
 }

@@ -32,23 +32,43 @@
 }
 .admin .admn {
     width: 210px;
-    height: 130px;
+    height: 0px;
     background-color: #fff;
     position: absolute;
     top: 72px;
     box-shadow: 1px 2px 1px  #00000013;
-    padding-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
     z-index: 999;
+    transition: all .2s ease-in-out;
 } 
+.admn.open{
+    height: 110px;
+}
 .admin .admn a{
-    height: 30px;
-    width: 195px;
+    height: 25px;
+    width: 200px;
     text-decoration: none;
     color: #02151B;
     font-size: 18px;
-    margin: 10px auto ;
+    margin: 21px auto 0;
     display: block;
-    text-align: right;
-    padding: 5px 30px;
+    text-align: center;
+    padding: 3px 0px 0;
 }
 .admin .admn a:hover{background-color: #f0f5f6;}
+
+@media (max-width: 480px) {
+    .admin{
+        width: 160px;
+        justify-content: flex-end;    
+        box-shadow: none;
+    }
+    .admin .icon{display: none};
+    .admn.open{
+        height: 120px;
+        width:96%;
+        left: 2%;
+        top: 90px;
+    }
+}

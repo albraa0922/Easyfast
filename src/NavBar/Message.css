@@ -1,10 +1,17 @@
 .message {
-    width: 470px;
-    height: 325px;
+    width: 0px;
+    height: 5px;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     border-radius: 5px;
+    transform: translateY(-20px);
+    transition: all 0.2s ease-in-out; 
+}
+.message.open{
+    transform: translateY(0);
+    width: 470px;
+    height: 325px;
 }
 .message .notsCount{
     float: right;
@@ -13,4 +20,13 @@
 }
 .message .mCont{
     height: 300px;
+}
+
+@media (max-width: 480px){
+    .message.open {
+        position: absolute;
+        left: 2.5%;
+        top: 90px;
+        width: 95%;
+    }
 }

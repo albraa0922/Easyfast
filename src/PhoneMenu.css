@@ -1,24 +1,32 @@
-.sidemenu{
-    width: 16%;
+.PhoneMenu{
+    width: 225px;
     height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 0;
     background-color: #fff;
+    padding-top: 25px;
 }
-.sidemenu .menu-logo{
+.closeMenu{
+    position: absolute;
+    top: 23px;
+    left: 14px;
+    width: 31px;
+    height: 31px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.PhoneMenu .menu-logo{
     width: 200px;
-    margin: 34px 0 0 15px;
+    margin: 0px 0 0 15px;
 }
 .menu-link ul {
     margin-top: 40px;
     list-style: none;
     padding: 0;
 }
-.menu-link ul li {
-    width: 170px;
+.PhoneMenu .menu-link ul li {
+    width: 180px;
     height: 35px;
-    margin: 0 25px 15px;
+    margin: 0 22px 15px;
     text-align: right;
 }
 .menu-link ul li svg{
@@ -42,8 +50,9 @@
     font-size: 17px;
 }
 
-@media (max-width: 480px) {
-    .sidemenu{
-        display: none;
+@media (min-width: 480px) {
+    .PhoneMenu{
+      display: none;
+        
     }
 }
