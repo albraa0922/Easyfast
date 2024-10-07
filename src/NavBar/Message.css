@@ -25,8 +25,9 @@
 @media (max-width: 480px){
     .message.open {
         position: absolute;
-        left: 2.5%;
+        left: 50%;
+        transform: translate(-50%);
         top: 90px;
-        width: 95%;
+        width: 380px;
     }
 }

@@ -22,5 +22,14 @@
     margin:0 50px 0 20px;
 }
 .msg .msgTime{
-    margin: 5px 0 10px 0;
+    margin: 5px 0 1px 0;
+}
+@media (max-width: 480px){
+    .msg{width: 350px;}
+    .msg .msgTit{
+        width: 350px;
+    }    
+    .msg .msgP{
+        margin:7px 30px 0 20px;
+    }
 }
