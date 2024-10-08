@@ -25,6 +25,7 @@
 @media (max-width: 480px) {
     .navbar{
         position: relative;
+        height: 65px;
     } 
     .navcont{
         width: 260px;

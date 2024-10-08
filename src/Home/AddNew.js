@@ -109,7 +109,6 @@ function AddNew({ openForm, sendData}) {
                 </Button>
             </form>
         </div>
-      
     </div>
     
   )

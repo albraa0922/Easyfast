@@ -2,6 +2,11 @@ body{
     margin: 0;
     background-color: #F2F7F9;
 }
+.App{
+    max-width: 1350px;
+    margin: auto;
+    position: relative;
+}
 *{
     box-sizing: border-box;
 }

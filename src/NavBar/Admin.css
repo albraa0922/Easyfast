@@ -65,11 +65,14 @@
         box-shadow: none;
     }
     .admin .icon{display: none};
+    .admin .admn {
+        width: 360px;
+        height: 0px;
+        top: 70px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    } 
     .admn.open{
         height: 120px;
-        width:365px;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        top: 90px;
     }
 }

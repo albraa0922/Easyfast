@@ -2,7 +2,6 @@ import React, { useState, } from 'react'
 import {usersData} from "../Object.js"
 import Additions from './Additions.js';
 import AddNew from "./AddNew.js"
-import "./PaginationComponent.js"
 
 function PaginationComponent( props) {
   const [allData, setAllData] = useState(usersData)
@@ -45,7 +44,7 @@ function PaginationComponent( props) {
             >
             </Additions>
           ))}
-          {props.change && <div >
+          {props.change && <div className='movebut'>
            <button onClick={handlePreviousPage} disabled={currentPage===1}>
             السابق    
           </button>

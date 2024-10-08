@@ -1,27 +1,30 @@
 .Notification {
-    width: 0px;
-    height: 0px;
+    width: 470px;
+    height: 310px;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.233);
     border-radius: 5px;
+    transform: translate(-66%, -50%)  scale(0);
     transition: all 0.2s ease-in-out; 
 }
 .Notification.open{
-    width: 470px;
-    height: 310px;
+    transform: translate(0%, 0%) scale(1);
 }
 .Notification .notsCount{
     float: right;
     margin: 22px 18px 11px;
     color: #118AB2;
 }
+.message .mCont{
+    height: 300px;
+}
 
 @media (max-width: 480px){
     .Notification.open {
-        position: absolute;
+    position: absolute;
         left: 2.5%;
-        top: 90px;
-        width: 95%;
+        top: 73px;
+        width: 350px;
     }
 }

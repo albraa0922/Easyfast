@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 999;
     background-color: #62798154;
 }.theAadd{
@@ -56,11 +56,11 @@
 }
 
 @media (max-width: 480px) {
-    .theAadd{
-        position: relative;
-        width: 365px;
-        height: 850px;
-        margin: 30px auto;
+.theAadd{
+    position: relative;
+    width: 365px;
+    height: 1150px;
+    margin: 26px auto;
 }
 .theAadd h2{
     margin: 0px 20px 20px 160px ;
@@ -71,9 +71,12 @@
     top: 50px;
     left: 30px;
 }
+.theAadd .addcont{
+    height:700px ;
+}
 .addcont div{
     width: 335px;
-    margin:28px auto ;
+    margin:17px auto ;
 }
 .addcont .right{float: none;}
 .addcont .left {float: none;}
